@@ -1,0 +1,23 @@
+---
+frontend:
+  enabled: true
+  listen: "127.0.0.1:8080"
+  ssl:
+    enabled: true
+    ceritificate: null
+    privatekey: null
+collectors:
+  - name: DefaultSyslog
+    type: syslog
+    protocol: udp
+    port: 10514
+    storage: ms01
+  - name: SyslogRFC5424
+    type: syslog
+    protocol: tcp
+    port: 10514
+    storage: ms01
+storage:
+  - name: ms01
+    type: meilisearch
+    url: http://127.0.0.1/indexes/syslog/documents
