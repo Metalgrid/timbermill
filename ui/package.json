@@ -1,0 +1,31 @@
+{
+  "name": "timbermill-ui",
+  "version": "1.0.0",
+  "description": "Timbermill User Interface",
+  "main": "src/index.js",
+  "scripts": {
+    "build:production": "webpack build --mode=production",
+    "build:development": "webpack build --mode=development",
+    "build": "build:production",
+    "dev": "webpack serve"
+  },
+  "author": "Iskren Hadzhinedev <i.hadzhinedev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^5.1.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0"
+  }
+}
