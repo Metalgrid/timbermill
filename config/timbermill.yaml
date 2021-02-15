@@ -12,7 +12,7 @@ collectors:
     protocol: udp
     port: 10514
     storage: ms01
-  - name: SyslogRFC5424
+  - name: SyslogTCP
     type: syslog
     protocol: tcp
     port: 10514
@@ -20,4 +20,4 @@ collectors:
 storage:
   - name: ms01
     type: meilisearch
-    url: http://127.0.0.1/indexes/syslog/documents
+    url: http://127.0.0.1:7700/indexes/syslog/documents
