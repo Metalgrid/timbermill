@@ -4,6 +4,7 @@
   "description": "Timbermill User Interface",
   "main": "src/index.js",
   "scripts": {
+    "build:styles": "postcss src/index.css",
     "build:production": "webpack build --mode=production",
     "build:development": "webpack build --mode=development",
     "build": "build:production",
@@ -15,15 +16,22 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
+    "autoprefixer": "^10.2.4",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.0.2",
     "html-webpack-plugin": "^5.1.0",
+    "postcss": "^8.2.6",
+    "postcss-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.3",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "daisyui": "^0.11.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0"
